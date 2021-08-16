@@ -7,3 +7,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+# Log Output to a file
+logging:
+  file:
+    path: "${user.dir}/${spring.application.name}}/log/"
+    name: "${spring.application.name}.log"
